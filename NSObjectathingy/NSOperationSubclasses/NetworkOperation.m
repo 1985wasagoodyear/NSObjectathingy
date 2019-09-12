@@ -44,13 +44,7 @@ NSTimeInterval TIMEOUT_ALLOCATION = 180.0;
                                        cachePolicy:NSURLRequestReturnCacheDataElseLoad
                                    timeoutInterval:TIMEOUT_ALLOCATION];
         _method = method;
-        __weak typeof(self) weakSelf = self;
-        _completion = ^void(NSData *data, NSURLResponse *response, NSError *error) {
-            // more work here
-            completion(data, response, error);
-            typeof(weakSelf) strongSelf = weakSelf;
-            [strongSelf finish];
-        };
+        _completion = completion;
     }
     return self;
 }
@@ -67,13 +61,33 @@ NSTimeInterval TIMEOUT_ALLOCATION = 180.0;
     return self;
 }
 
+- (id)copy {
+    return [[NetworkOperation alloc] init:_session
+                                      url:[_url URL]
+                                   method:_method
+                               completion:_completion];
+}
+
 #pragma mark - Control
 
 - (void)start {
     [super start];
+    // if we cancel this before, don't start perform tasks
+    if ([self isCancelled]) {
+        [self finish];
+        return;
+    }
     [_url setHTTPBody: _body];
     [_url setHTTPMethod:_method];
-    _task = [_session dataTaskWithRequest:_url completionHandler:_completion];
+    
+    __weak typeof(self) weakSelf = self;
+    void (^comp)(NSData *data, NSURLResponse *response, NSError *error) = ^void(NSData *data, NSURLResponse *response, NSError *error) {
+        // more work here
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf->_completion(data, response, error);
+        [strongSelf finish];
+    };
+    _task = [_session dataTaskWithRequest:_url completionHandler:comp];
     [_task resume];
 }
 
@@ -100,6 +114,7 @@ NSTimeInterval TIMEOUT_ALLOCATION = 180.0;
         NSLog(@"Some other task here, after");
     }];
     [op addDependency:op0];
+    [op cancel];
     [op2 addDependency:op];
     [[NSOperationQueue currentQueue] addOperations:@[op0, op, op2] waitUntilFinished:NO];
 }
