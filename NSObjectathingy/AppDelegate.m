@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NetworkOperation.h"
 
 @interface AppDelegate ()
 
@@ -14,10 +15,8 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
+    [NetworkOperation test];
     return YES;
 }
 

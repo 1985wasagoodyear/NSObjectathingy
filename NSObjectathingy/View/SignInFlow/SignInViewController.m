@@ -29,7 +29,8 @@ NSString *const TO_DIARY_SEGUE_ID = @"toDiary";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:TO_DIARY_SEGUE_ID]) {
-        
+  //      UINavigationController *nav = [segue destinationViewController];
+  //      UIViewController *signedInVC = [nav viewControllers][0];
     }
 }
 

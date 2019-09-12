@@ -7,19 +7,16 @@
 //
 
 #import "CatHeaderTableViewCell.h"
+#import "UIKit+Utility.h"
 
 @implementation CatHeaderTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [_catImageView.layer roundCorners];
+    [_catNameButton.layer roundCorners];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 - (IBAction)catNameButtonAction:(UIButton *)sender {
     printf("mreow");
 }

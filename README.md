@@ -27,6 +27,9 @@ To create an app wherein each individual high-level subtask that is able to be d
 
 1. [Advanced NSOperations - WWDC 2015 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2015/226/ "Advanced NSOperations - WWDC 2015")
 
-2. [NSOperation - Foundation | Apple Developer Documentation] (https://developer.apple.com/documentation/foundation/nsoperation "NSOperation - Apple Developer")
+2. [NSOperation - Foundation | Apple Developer Documentation](https://developer.apple.com/documentation/foundation/nsoperation "NSOperation - Apple Developer")
 
-3. [My large cat eating funyuns!! Lol] (https://www.youtube.com/watch?v=jF9LSPxBfW0 "My large cat eating funyuns!! Lol") 
+3. [My large cat eating funyuns!! Lol](https://www.youtube.com/watch?v=jF9LSPxBfW0 "My large cat eating funyuns!! Lol") 
+
+4. [NETWORKING WITH NSOPERATION AS YOUR WINGMAN - William Boles](https://williamboles.me/networking-with-nsoperation-as-your-wingman "NETWORKING WITH NSOPERATION AS YOUR WINGMAN")
+

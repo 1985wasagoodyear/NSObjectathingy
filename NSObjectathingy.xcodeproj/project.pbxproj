@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F42F366232A772D0002152F /* NetworkingWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42F365232A772D0002152F /* NetworkingWorker.m */; };
+		3F42F369232A77DF0002152F /* UserSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42F368232A77DF0002152F /* UserSignIn.m */; };
+		3F42F36C232A78C20002152F /* CredentialsValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42F36B232A78C20002152F /* CredentialsValidator.m */; };
+		3F42F370232A7B6E0002152F /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42F36F232A7B6E0002152F /* NetworkOperation.m */; };
+		3F42F3B2232A8E1C0002152F /* NWMOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F42F3B0232A8E1C0002152F /* NWMOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F42F3B5232A8E1C0002152F /* NWMOperations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F42F3AE232A8E1C0002152F /* NWMOperations.framework */; };
+		3F42F3B6232A8E1C0002152F /* NWMOperations.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F42F3AE232A8E1C0002152F /* NWMOperations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F42F3BC232A8E370002152F /* NWMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42F3BA232A8E360002152F /* NWMOperation.m */; };
+		3F42F3BD232A8E370002152F /* NWMOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F42F3BB232A8E360002152F /* NWMOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F8A4040232153C000C04CB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A403F232153C000C04CB9 /* AppDelegate.m */; };
 		3F8A4043232153C000C04CB9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A4042232153C000C04CB9 /* SignInViewController.m */; };
 		3F8A4046232153C000C04CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A4044232153C000C04CB9 /* Main.storyboard */; };
@@ -19,9 +28,17 @@
 		3F8A407023218AB000C04CB9 /* CatDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A406F23218AB000C04CB9 /* CatDiaryViewController.m */; };
 		3F8A407523218BE700C04CB9 /* CatHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A407423218BE700C04CB9 /* CatHeaderTableViewCell.m */; };
 		3F8A407823218DF200C04CB9 /* CatHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A407723218DF200C04CB9 /* CatHeaderTableViewCell.xib */; };
+		3F8A407C2321AF1600C04CB9 /* UIKit+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A407B2321AF1600C04CB9 /* UIKit+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F42F3B3232A8E1C0002152F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8A4033232153C000C04CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F42F3AD232A8E1C0002152F;
+			remoteInfo = NWMOperations;
+		};
 		3F8A4057232153C200C04CB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3F8A4033232153C000C04CB9 /* Project object */;
@@ -31,7 +48,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F42F385232A8B110002152F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F42F3B6232A8E1C0002152F /* NWMOperations.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F42F364232A772D0002152F /* NetworkingWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingWorker.h; sourceTree = "<group>"; };
+		3F42F365232A772D0002152F /* NetworkingWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingWorker.m; sourceTree = "<group>"; };
+		3F42F367232A77DF0002152F /* UserSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSignIn.h; sourceTree = "<group>"; };
+		3F42F368232A77DF0002152F /* UserSignIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSignIn.m; sourceTree = "<group>"; };
+		3F42F36A232A78C20002152F /* CredentialsValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CredentialsValidator.h; sourceTree = "<group>"; };
+		3F42F36B232A78C20002152F /* CredentialsValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CredentialsValidator.m; sourceTree = "<group>"; };
+		3F42F36E232A7B6E0002152F /* NetworkOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkOperation.h; sourceTree = "<group>"; };
+		3F42F36F232A7B6E0002152F /* NetworkOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkOperation.m; sourceTree = "<group>"; };
+		3F42F3AE232A8E1C0002152F /* NWMOperations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWMOperations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F42F3B0232A8E1C0002152F /* NWMOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWMOperations.h; sourceTree = "<group>"; };
+		3F42F3B1232A8E1C0002152F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F42F3BA232A8E360002152F /* NWMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWMOperation.m; sourceTree = "<group>"; };
+		3F42F3BB232A8E360002152F /* NWMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWMOperation.h; sourceTree = "<group>"; };
 		3F8A403B232153C000C04CB9 /* NSObjectathingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSObjectathingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8A403E232153C000C04CB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F8A403F232153C000C04CB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,13 +98,23 @@
 		3F8A407323218BE700C04CB9 /* CatHeaderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatHeaderTableViewCell.h; sourceTree = "<group>"; };
 		3F8A407423218BE700C04CB9 /* CatHeaderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatHeaderTableViewCell.m; sourceTree = "<group>"; };
 		3F8A407723218DF200C04CB9 /* CatHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		3F8A407A2321AEDD00C04CB9 /* UIKit+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+Utility.h"; sourceTree = "<group>"; };
+		3F8A407B2321AF1600C04CB9 /* UIKit+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIKit+Utility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F42F3AB232A8E1C0002152F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F8A4038232153C000C04CB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F42F3B5232A8E1C0002152F /* NWMOperations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +128,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F42F361232A76F80002152F /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				3F42F364232A772D0002152F /* NetworkingWorker.h */,
+				3F42F365232A772D0002152F /* NetworkingWorker.m */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		3F42F36D232A7B540002152F /* NSOperationSubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				3F42F36E232A7B6E0002152F /* NetworkOperation.h */,
+				3F42F36F232A7B6E0002152F /* NetworkOperation.m */,
+			);
+			path = NSOperationSubclasses;
+			sourceTree = "<group>";
+		};
+		3F42F3AF232A8E1C0002152F /* NWMOperations */ = {
+			isa = PBXGroup;
+			children = (
+				3F42F3B0232A8E1C0002152F /* NWMOperations.h */,
+				3F42F3BB232A8E360002152F /* NWMOperation.h */,
+				3F42F3BA232A8E360002152F /* NWMOperation.m */,
+				3F42F3B1232A8E1C0002152F /* Info.plist */,
+			);
+			path = NWMOperations;
+			sourceTree = "<group>";
+		};
 		3F8A4032232153C000C04CB9 = {
 			isa = PBXGroup;
 			children = (
 				3F8A40652321555200C04CB9 /* README.md */,
 				3F8A403D232153C000C04CB9 /* NSObjectathingy */,
 				3F8A4059232153C200C04CB9 /* NSObjectathingyTests */,
+				3F42F3AF232A8E1C0002152F /* NWMOperations */,
 				3F8A403C232153C000C04CB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +173,7 @@
 			children = (
 				3F8A403B232153C000C04CB9 /* NSObjectathingy.app */,
 				3F8A4056232153C200C04CB9 /* NSObjectathingyTests.xctest */,
+				3F42F3AE232A8E1C0002152F /* NWMOperations.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +181,10 @@
 		3F8A403D232153C000C04CB9 /* NSObjectathingy */ = {
 			isa = PBXGroup;
 			children = (
+				3F8A40792321AEBA00C04CB9 /* Utility */,
 				3F8A407623218C4F00C04CB9 /* Model */,
+				3F42F36D232A7B540002152F /* NSOperationSubclasses */,
+				3F42F361232A76F80002152F /* Worker */,
 				3F8A406C232187D800C04CB9 /* Service */,
 				3F8A406D232187E300C04CB9 /* View */,
 				3F8A403E232153C000C04CB9 /* AppDelegate.h */,
@@ -162,13 +250,56 @@
 		3F8A407623218C4F00C04CB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F42F36A232A78C20002152F /* CredentialsValidator.h */,
+				3F42F36B232A78C20002152F /* CredentialsValidator.m */,
+				3F42F367232A77DF0002152F /* UserSignIn.h */,
+				3F42F368232A77DF0002152F /* UserSignIn.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3F8A40792321AEBA00C04CB9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A407A2321AEDD00C04CB9 /* UIKit+Utility.h */,
+				3F8A407B2321AF1600C04CB9 /* UIKit+Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3F42F3A9232A8E1C0002152F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F42F3B2232A8E1C0002152F /* NWMOperations.h in Headers */,
+				3F42F3BD232A8E370002152F /* NWMOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		3F42F3AD232A8E1C0002152F /* NWMOperations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F42F3B7232A8E1C0002152F /* Build configuration list for PBXNativeTarget "NWMOperations" */;
+			buildPhases = (
+				3F42F3A9232A8E1C0002152F /* Headers */,
+				3F42F3AA232A8E1C0002152F /* Sources */,
+				3F42F3AB232A8E1C0002152F /* Frameworks */,
+				3F42F3AC232A8E1C0002152F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWMOperations;
+			productName = NWMOperations;
+			productReference = 3F42F3AE232A8E1C0002152F /* NWMOperations.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3F8A403A232153C000C04CB9 /* NSObjectathingy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F8A405F232153C200C04CB9 /* Build configuration list for PBXNativeTarget "NSObjectathingy" */;
@@ -176,10 +307,12 @@
 				3F8A4037232153C000C04CB9 /* Sources */,
 				3F8A4038232153C000C04CB9 /* Frameworks */,
 				3F8A4039232153C000C04CB9 /* Resources */,
+				3F42F385232A8B110002152F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F42F3B4232A8E1C0002152F /* PBXTargetDependency */,
 			);
 			name = NSObjectathingy;
 			productName = NSObjectathingy;
@@ -213,8 +346,12 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "K Y";
 				TargetAttributes = {
+					3F42F3AD232A8E1C0002152F = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					3F8A403A232153C000C04CB9 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					3F8A4055232153C200C04CB9 = {
 						CreatedOnToolsVersion = 10.2;
@@ -237,11 +374,19 @@
 			targets = (
 				3F8A403A232153C000C04CB9 /* NSObjectathingy */,
 				3F8A4055232153C200C04CB9 /* NSObjectathingyTests */,
+				3F42F3AD232A8E1C0002152F /* NWMOperations */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F42F3AC232A8E1C0002152F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F8A4039232153C000C04CB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +408,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F42F3AA232A8E1C0002152F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F42F3BC232A8E370002152F /* NWMOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F8A4037232153C000C04CB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,9 +424,14 @@
 				3F8A407523218BE700C04CB9 /* CatHeaderTableViewCell.m in Sources */,
 				3F8A4049232153C000C04CB9 /* NSObjectathingy.xcdatamodeld in Sources */,
 				3F8A406B2321879F00C04CB9 /* CoreDataService.m in Sources */,
+				3F42F370232A7B6E0002152F /* NetworkOperation.m in Sources */,
 				3F8A407023218AB000C04CB9 /* CatDiaryViewController.m in Sources */,
 				3F8A4051232153C200C04CB9 /* main.m in Sources */,
+				3F42F366232A772D0002152F /* NetworkingWorker.m in Sources */,
 				3F8A4040232153C000C04CB9 /* AppDelegate.m in Sources */,
+				3F42F369232A77DF0002152F /* UserSignIn.m in Sources */,
+				3F42F36C232A78C20002152F /* CredentialsValidator.m in Sources */,
+				3F8A407C2321AF1600C04CB9 /* UIKit+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +446,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F42F3B4232A8E1C0002152F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F42F3AD232A8E1C0002152F /* NWMOperations */;
+			targetProxy = 3F42F3B3232A8E1C0002152F /* PBXContainerItemProxy */;
+		};
 		3F8A4058232153C200C04CB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3F8A403A232153C000C04CB9 /* NSObjectathingy */;
@@ -315,6 +478,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F42F3B8232A8E1C0002152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NWMOperations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.NWMOperations;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F42F3B9232A8E1C0002152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NWMOperations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.NWMOperations;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3F8A405D232153C200C04CB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -431,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NSObjectathingy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -440,6 +656,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ky.NSObjectathingy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -448,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NSObjectathingy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -457,6 +676,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ky.NSObjectathingy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -500,6 +720,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F42F3B7232A8E1C0002152F /* Build configuration list for PBXNativeTarget "NWMOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F42F3B8232A8E1C0002152F /* Debug */,
+				3F42F3B9232A8E1C0002152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F8A4036232153C000C04CB9 /* Build configuration list for PBXProject "NSObjectathingy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
