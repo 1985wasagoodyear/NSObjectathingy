@@ -8,17 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "NWMOperations.h"
+#import <objc/nsobjcruntime.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NetworkOperation : NWMOperation
 
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)new NS_UNAVAILABLE;
+
+/// Method with body
 - (instancetype)init:(NSURLSession *)session
                  url:(NSURL *)url
               method:(NSString *)method
-                body:(NSDictionary *)body
+                body:(NSData *)body
           completion:(void (^)(NSData *, NSURLResponse *, NSError *))completion;
 
+/// Method without Body
 - (instancetype)init:(NSURLSession *)session
                  url:(NSURL *)url
               method:(NSString *)method

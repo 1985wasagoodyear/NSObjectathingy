@@ -19,7 +19,7 @@
 		3F8A4040232153C000C04CB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A403F232153C000C04CB9 /* AppDelegate.m */; };
 		3F8A4043232153C000C04CB9 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A4042232153C000C04CB9 /* SignInViewController.m */; };
 		3F8A4046232153C000C04CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A4044232153C000C04CB9 /* Main.storyboard */; };
-		3F8A4049232153C000C04CB9 /* NSObjectathingy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A4047232153C000C04CB9 /* NSObjectathingy.xcdatamodeld */; };
+		3F8A4049232153C000C04CB9 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A4047232153C000C04CB9 /* CoreDataContainer.xcdatamodeld */; };
 		3F8A404B232153C200C04CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A404A232153C200C04CB9 /* Assets.xcassets */; };
 		3F8A404E232153C200C04CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A404C232153C200C04CB9 /* LaunchScreen.storyboard */; };
 		3F8A4051232153C200C04CB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A4050232153C200C04CB9 /* main.m */; };
@@ -63,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F028224232A9DC600AE86CC /* Endpoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Endpoints.h; sourceTree = "<group>"; };
 		3F42F364232A772D0002152F /* NetworkingWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingWorker.h; sourceTree = "<group>"; };
 		3F42F365232A772D0002152F /* NetworkingWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingWorker.m; sourceTree = "<group>"; };
 		3F42F367232A77DF0002152F /* UserSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSignIn.h; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		3F42F361232A76F80002152F /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				3F028224232A9DC600AE86CC /* Endpoints.h */,
 				3F42F364232A772D0002152F /* NetworkingWorker.h */,
 				3F42F365232A772D0002152F /* NetworkingWorker.m */,
 			);
@@ -193,7 +195,6 @@
 				3F8A404C232153C200C04CB9 /* LaunchScreen.storyboard */,
 				3F8A404F232153C200C04CB9 /* Info.plist */,
 				3F8A4050232153C200C04CB9 /* main.m */,
-				3F8A4047232153C000C04CB9 /* NSObjectathingy.xcdatamodeld */,
 			);
 			path = NSObjectathingy;
 			sourceTree = "<group>";
@@ -210,6 +211,7 @@
 		3F8A406C232187D800C04CB9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3F8A4047232153C000C04CB9 /* CoreDataContainer.xcdatamodeld */,
 				3F8A40692321879F00C04CB9 /* CoreDataService.h */,
 				3F8A406A2321879F00C04CB9 /* CoreDataService.m */,
 			);
@@ -422,7 +424,7 @@
 			files = (
 				3F8A4043232153C000C04CB9 /* SignInViewController.m in Sources */,
 				3F8A407523218BE700C04CB9 /* CatHeaderTableViewCell.m in Sources */,
-				3F8A4049232153C000C04CB9 /* NSObjectathingy.xcdatamodeld in Sources */,
+				3F8A4049232153C000C04CB9 /* CoreDataContainer.xcdatamodeld in Sources */,
 				3F8A406B2321879F00C04CB9 /* CoreDataService.m in Sources */,
 				3F42F370232A7B6E0002152F /* NetworkOperation.m in Sources */,
 				3F8A407023218AB000C04CB9 /* CatDiaryViewController.m in Sources */,
@@ -761,13 +763,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3F8A4047232153C000C04CB9 /* NSObjectathingy.xcdatamodeld */ = {
+		3F8A4047232153C000C04CB9 /* CoreDataContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3F8A4048232153C000C04CB9 /* NSObjectathingy.xcdatamodel */,
 			);
 			currentVersion = 3F8A4048232153C000C04CB9 /* NSObjectathingy.xcdatamodel */;
-			path = NSObjectathingy.xcdatamodeld;
+			path = CoreDataContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

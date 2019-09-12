@@ -10,7 +10,7 @@
 
 #import "NetworkOperation.h"
 
-NSTimeInterval TIMEOUT_ALLOCATION = 180.0;
+const NSTimeInterval TIMEOUT_ALLOCATION = 180.0;
 
 @interface NetworkOperation () {
     NSURLSession *_session;

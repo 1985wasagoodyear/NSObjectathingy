@@ -24,7 +24,7 @@
 - (NSPersistentContainer *)persistentContainer {
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"NSObjectathingy"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"CoreDataContainer"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     NSLog(@"Unresolved error %@, %@", error, error.userInfo);
