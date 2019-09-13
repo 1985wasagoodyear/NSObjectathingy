@@ -16,7 +16,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NetworkOperation test];
+    //[NetworkOperation test];
     return YES;
 }
 

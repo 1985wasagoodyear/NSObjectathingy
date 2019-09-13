@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NetworkingWorker : NSObject
 
-- (void)performSignIn:(UserSignIn *)details;
+- (void)performSignIn:(UserSignIn *)details
+              success:(void (^)(void))success
+              failure:(void (^)(NSError *))failure;
 
 @end
 

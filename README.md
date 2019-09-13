@@ -12,15 +12,16 @@ To create an app wherein each individual high-level subtask that is able to be d
 
 # List of all Tasks:
 
-1. Sign in
+(done) 1. Sign in
 2. Load data
 3. Present UI
 4. Create new data
 5. Update UI
 6. Save data
 7. Sign out
-8. Navigation
-9. Present Error & Success Alerts
+(done) 8. Navigation
+(done) 9. Present Error & Success Alerts
+
 
 # Resources:
 

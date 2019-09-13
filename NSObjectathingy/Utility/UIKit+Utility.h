@@ -18,4 +18,10 @@
 
 @end
 
+@interface UIViewController (Utility)
+
+- (void)showToast:(NSString *)message;
+
+@end
+
 #endif /* UIKit_Utility_h */

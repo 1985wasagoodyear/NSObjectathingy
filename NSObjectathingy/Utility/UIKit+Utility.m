@@ -22,3 +22,15 @@
 
 @end
 
+@implementation UIViewController (Utility)
+
+- (void)showToast:(NSString *)message {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:message
+                                                                   message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:nil];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+@end

@@ -26,21 +26,16 @@ NSString *const PASSWORD_KEY = @"password";
 }
 
 - (instancetype)init:(NSString *)username password:(NSString *)password {
-    self = [super init];
-    if (self) {
-        if ([CredentialsValidator isValidEmail:username]
-            && [CredentialsValidator isValidPassword:password]) {
+    if ([CredentialsValidator isValidEmail:username]
+        && [CredentialsValidator isValidPassword:password]) {
+        self = [super init];
+        if (self) {
             _username = username;
             _password = password;
         }
-        else {
-            NSException* myException = [NSException
-                                        exceptionWithName:@"Invalid email and password combination"
-                                        reason:@""
-                                        userInfo:nil];
-            @throw myException;
-            // [myException raise]; /* equivalent to above directive */
-        }
+    }
+    else {
+        self = nil;
     }
     return self;
 }
